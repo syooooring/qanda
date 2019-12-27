@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     if @question.save
-      redirect_to root_path, notioce: 'Success!'
+      redirect_to root_path, notice: 'Success!'
     else
       flash[:alert] = 'Save error!'
       render :new
