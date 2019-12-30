@@ -49,6 +49,5 @@ test:
 #
 production:
   <<: *default
-  database: qanda_production
-  username: qanda
-  password: <%= ENV['QANDA_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
